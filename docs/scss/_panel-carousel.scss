@@ -1,0 +1,30 @@
+.panel{justify-content:  center;
+        margin: 20px 15px;
+        display: flex;}
+.boton{margin: 0 15px;
+        border-radius: 45px;}
+.btn-outline-primary:hover {color: green;}
+.carousel-item{
+        img{    opacity: 0.6;
+                // filter: alpha(opacity=20);
+        }
+}
+
+.gradiente1 { 
+        position: absolute;
+        background-image:linear-gradient(
+              rgba(25, 209, 231, 0.5),
+              rgba(243, 17, 224, 0.5)
+            );
+          
+         height: 630px; width: 100%;
+        }
+.gradiente2 { 
+                position: absolute;
+                background-image:linear-gradient(
+                      rgba(0, 0, 0, 0.5),
+                      rgba(0, 0, 0, 0.5)
+                    );
+                  
+                 height: 630px; width: 100%;
+                }

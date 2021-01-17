@@ -1,0 +1,56 @@
+.quieto{
+  transition:all 0.5s ease-in-out;
+  background-color:transparent !important;
+  height: 80px;
+  font-size: .9em;
+  .logo{color: white;
+    margin-left: 3em;
+    font-size: 2.1em;}
+  .nav-link{color: white;
+    font-size: 1em;
+    margin-right: 1em;
+    &:hover{color: white;}
+
+  }
+  hr{ 
+      color: white;
+      transform: rotate(90deg);
+    }
+  .partebarra{justify-content: end;
+    margin-right: 5em;
+    }
+}
+
+.moviendo{   transition:all 0.5s ease-in-out;
+            background-color: white;
+            height: 55px;
+            font-size: .9em;
+            .logo{color: black;
+              margin-left: 3em;
+              font-size: 2.1em;}
+          .nav-link{color: black;
+            font-size: 1em;
+            margin-right: 1em;
+            &:hover{color: black;}
+          }
+          .divisorvertical{
+            color: black;
+            transform: rotate(90deg);
+          }
+          .partebarra{justify-content: end;
+            margin-right: 5em;
+
+          }
+}
+
+
+.menuhome{
+  background-color: grey;
+  width: 600px;
+}
+
+.icono{margin:auto 10px;}
+
+
+
+

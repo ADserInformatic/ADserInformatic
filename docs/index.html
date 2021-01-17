@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADser</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/odometer.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="scss/estilos.css">
+    <link rel="stylesheet" href="Iconos/style.css">
+
+</head>
+<body>
+    <div class="entero">
+
+      <!-- BARRA NAVEGACION -->
+      <nav id="menu" class="navbar navbar-expand-lg fixed-top quieto">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#"><strong> ADser Informatic</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="partebarra">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- HOME -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="MenuHOME" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <strong> Servicios</strong>
+                </a>
+                <div class="dropdown-menu menuhome" aria-labelledby="MenuHOME">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <!-- PAGES -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="MenuPAGES" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <strong> Portafolio</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="MenuPAGES">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <!-- BLOG -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="MenuBLOG" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <strong> Contacto</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="MenuBLOG">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <!-- PORTFOLIO -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="MenuPORTFOLIO" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <strong> Redes</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="MenuPORTFOLIO">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="icono"><i class="icon-add-to-list"> </i></li>
+              <li class="icono"><i class="icon-add-to-list"> </i></li>
+
+            </ul>
+            <hr>
+          </div>
+        </div> 
+        </div>
+        
+      </nav>
+
+
+
+<!-- CAROUSEL -->
+
+    <div class="carouselee">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <header>
+        <div class="carousel-inner">
+          <!-- <div class="gradiente"></div> -->
+          <div class="carousel-item active">
+            <div class="gradiente1"></div>
+              <img src="images/1.jpg" class="d-block w-100 img-fluid" style="height: 630px; width: 100%;" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>First slide label</h5>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            
+          </div>
+          <div class="carousel-item">
+            <div class="gradiente2"></div>
+            <img src="images/2.jpg" class="d-block w-100 img-fluid" style="height: 630px; width: 100%;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="gradiente2"></div>
+            <img src="images/3.jpg" class="d-block w-100 img-fluid" style="height: 630px;width: 100%;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+    </header>
+
+
+
+
+
+
+
+<!-- WHOWEARE -->
+    <div class="whoweare">
+      <div class="row" style="margin: 0 15px;">
+        <div class="col-sm-12" style="margin-bottom: 15px;">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h2>QUIENES SOMOS?</h2>
+          <h5 class="titulo">--Soluciones Informáticas--</h5>
+          <p class="parrafo">Somos una empresa especializada en la programación web. Consideramos que lo que determina el alcance de una empresa tiene que ver con la adaptación. Adaptarse al contexto actual no solo es pensar en el hoy, sino que el actualizarse hoy reduce las posibilidades de estancarse, ya que cuando se deja atrás el ayer y se piensa en el hoy, el mañana está al alcance de las manos. Por eso en ADser Informatic nos ocupamos de pensar en  la mejor forma de hacer crecer tu negocio.</p>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3">
+          <div class="containerrr">
+            <div class="div-imggg" >
+              <img class="imggg" src="https://www.interactius.com/wp-content/uploads/2017/09/foto10.png" title="Foto10" alt="Foto10">
+              <div class="texttt">That's all folks!</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-3">
+          <div class="containerrr">
+            <div class="div-imggg" >
+              <img class="imggg" src="https://www.interactius.com/wp-content/uploads/2017/09/foto10.png" title="Foto10" alt="Foto10">
+              <div class="texttt">That's all folks!</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+
+      </div>
+    </div>
+<br>
+<!-- presentacion -->
+<div class="fotos">
+  <div class="tiitle">
+      <h2>Somo lo mejores de este juego</h2>
+      <p>Y acá mal</p>git 
+  </div>
+  <div class="fot">
+      <div class="img">
+          <img src="informatica (2).jpg" alt="">
+          <div class="trans">
+              <h4><b>Sitio web informativo</b></h4>
+              <p>Una página.</p>
+              <p>Adaptación a los diferentes dispositivos.</p>
+              <p>Diseño predeterminado.</p>
+              <div class="iconos">
+                  <h4>$12.000</h4>
+              </div>
+          </div>
+      </div>
+      <div class="img">
+          <img src="informatica (2).jpg" alt="">
+          <div class="trans">
+              <h4><b>Sitio web básico</b></h4>
+              <p>Hasta 4 páginas.</p>
+              <p>Adaptación a los diferentes dispositivos.</p>
+              <p>Con opción de personalizar algunas secciones.</p>
+              <div class="iconos">
+                  <h4>$16.000</h4>
+              </div>
+          </div>
+      </div>
+      <div class="img">
+          <img src="informatica (2).jpg" alt="">
+          <div class="trans">
+              <h4><b>Sitio web estandar</b></h4>
+              <p>Hasta 6 páginas.</p>
+              <p>Adaptación a los diferentes dispositivos.</p>
+              <p>Con opción de personalizar algunas secciones.</p>
+              <div class="iconos">
+                  <h4>$24.000</h4>
+              </div>
+          </div>
+      </div>
+      <div class="img">
+          <img src="informatica (2).jpg" alt="">
+          <div class="trans"><h4><b>Sitio web premium</b></h4>
+            <p>Hasta 8 páginas.</p>
+            <p>Adaptación a los diferentes dispositivos.</p>
+            <p>Con opción de personalizar algunas secciones.</p>
+            <p>Catálogo + Ventas online.</p>
+            <div class="iconos">
+                <h4>$30.000</h4>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<br>
+<!-- BOTONES DE TARJETERO -->
+    <div class="panel">
+        <button class="btn btn-outline-primary boton" id="all">ALL</button>
+        <button class="btn btn-outline-primary boton" id="design">Informativo</button>
+        <button class="btn btn-outline-primary boton" id="web">Básico</button>
+        <button class="btn btn-outline-primary boton" id="branding">Estándar</button>
+        <button class="btn btn-outline-primary boton" id="print">Premmium</button>
+
+    </div>
+
+<!-- TARJETERO-->
+    <div class="mostrador">
+        <div class="tarjetero">
+            <ul class="caption-style-4">
+                <li id="taaag">
+                    <img src="maps.jpg" alt="">
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h1>Mapas</h1>
+                            <p>Geolocalización de tu negocio</p>
+                        </div>
+                    </div>
+                </li>
+            
+                <li id="taaag">
+                        <img src="img (4).jpg" alt="">
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>Amazing Caption</h1>
+                                <p>Whatever It Is - Always Awesome</p>
+                            </div>
+                        </div>
+                </li>
+                <li id="taaag">
+                    <img src="img (2).jpg" alt="">
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h1>Amazing Caption</h1>
+                            <p>Whatever It Is - Always Awesome</p>
+                        </div>
+                    </div>
+                </li>
+                <li id="taaag">
+                <img src="img (3).jpg" alt="">
+                <div class="caption">
+                    <div class="blur"></div>
+                    <div class="caption-text">
+                        <h1>Amazing Caption</h1>
+                        <p>Whatever It Is - Always Awesome</p>
+                    </div>
+                </div>
+                </li>
+                <li id="taaag">
+            <img src="img (4).jpg" alt="">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>Amazing Caption</h1>
+                    <p>Whatever It Is - Always Awesome</p>
+                </div>
+            </div>
+                </li>
+                <li id="taaag">
+        <img src="img (1).jpg" alt="">
+        <div class="caption">
+            <div class="blur"></div>
+            <div class="caption-text">
+                <h1>Amazing Caption</h1>
+                <p>Whatever It Is - Always Awesome</p>
+            </div>
+        </div>
+                </li>
+            </ul>         
+        </div>
+    </div>
+ 
+
+<!-- NUMEROS -->
+<div class="numeros">
+  <div class="row" style="margin: 0 15px;">
+    <div class="col-sm-3 contenedoraumenta">
+      <i class="icon-add-to-list"></i>
+      <h1 class="aumenta1">0</h1>
+      <h4>LEYENDA</h4>
+      </div>
+    <div class="col-sm-3 contenedoraumenta">
+      <i class="icon-add-to-list"></i>
+      <h1 class="aumenta2">0</h1>
+      <h4>LEYENDA</h4>
+    </div>
+    <div class="col-sm-3 contenedoraumenta">
+      <i class="icon-add-to-list"></i>
+      <h1 class="aumenta3">0</h1>
+      <h4>LEYENDA</h4>
+    </div>
+    <div class="col-sm-3 contenedoraumenta">
+      <i class="icon-add-to-list"></i>
+      <h1 class="aumenta4">0</h1>
+      <h4>LEYENDA</h4>
+    </div>
+  </div>
+</div>
+
+    
+
+
+        <!-- carrusel con flechitas -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="tiitle">
+                <h2>Alto carrusel perro</h2>
+                <p>hasta tiene caballito</p>
+            </div>
+            <div class="caru">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cart">
+                        <div class="d">
+                            <img src="img (1).jpg"  alt="">
+                            <h3><b>ADser Informatic</b></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellat nobis nesciunt non doloribus dicta nemo molestias maxime quam dolore! Temporibus a quae soluta earum omnis recusandae, explicabo quaerat necessitatibus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cart">
+                        <div class="d">
+                            <img src="img (2).jpg"  alt="">
+                            <h3><b>ADser Informatic</b></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellat nobis nesciunt non doloribus dicta nemo molestias maxime quam dolore! Temporibus a quae soluta earum omnis recusandae, explicabo quaerat necessitatibus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cart">
+                        <div class="d">
+                            <img src="img (3).jpg"  alt="">
+                            <h3><b>ADser Informatic</b></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum repellat nobis nesciunt non doloribus dicta nemo molestias maxime quam dolore! Temporibus a quae soluta earum omnis recusandae, explicabo quaerat necessitatibus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev flech" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+              <span class="icon-arrow-long-left" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next flech" href="#carouselExampleControls" role="button" data-bs-slide="next">
+              <span class="icon-arrow-long-right black" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+          <!-- tarjetas después del footer -->
+            <div class="Titulotarjetas">
+                <h2>Variedad de ofertas</h2>
+                <p>Tenemos el sitio web que vos necesitas</p>
+            </div>
+            <div class="cuerpe" id="lightSlider">
+    
+                <li class="tarjeta1" id="tarjeta">
+                    <img src="img (1).jpg" alt="">
+                    <div class="text">
+                        <h3>Fotografias de perros</h3>
+                        <a href="">June 20, 2020</a>
+                        <p>
+                            Curabitur quis faucibus odio, nec accumsan erat. Duis id ante convallis magna mattis pulvinar eu ut ipsum. Donec at leo id tortor mattis tempus.</p>
+                    </div>
+                </li>
+                <li class="tarjeta1" id="tarjeta">
+                    <img src="img (2).jpg" alt="">
+                    <div class="text">
+                        <h3>Fotografias de perros</h3>
+                        <a href="">June 20, 2020</a>
+                        <p>
+                            Curabitur quis faucibus odio, nec accumsan erat. Duis id ante convallis magna mattis pulvinar eu ut ipsum. Donec at leo id tortor mattis tempus</p>
+                    </div>
+                </li>
+                <li class="tarjeta1" id="tarjeta">
+                    <img src="img (3).jpg" alt="">
+                    <div class="text">
+                        <h3>Fotografias de perros</h3>
+                        <a href="">June 20, 2020</a>
+                        <p>Curabitur quis faucibus odio, nec accumsan erat. Duis id ante convallis magna mattis pulvinar eu ut ipsum. Donec at leo id tortor mattis tempus </p>
+                    </div>
+                </li>
+                <li class="tarjeta1" id="tarjeta">
+                    <img src="img (4).jpg" alt="">
+                    <div class="text">
+                        <h3>Fotografias de perros</h3>
+                        <a href="">June 20, 2020</a>
+                        <p>
+                            Curabitur quis faucibus odio, nec accumsan erat. Duis id ante convallis magna mattis pulvinar eu ut ipsum. Donec at leo id tortor mattis tempus</p>
+                    </div>
+                </li>
+                <li class="tarjeta1" id="tarjeta">
+                    <img src="img (4).jpg" alt="">
+                    <div class="text">
+                        <h3>Fotografias de perros</h3>
+                        <a href="">June 20, 2020</a>
+                        <p>
+                            Curabitur quis faucibus odio, nec accumsan erat. Duis id ante convallis magna mattis pulvinar eu ut ipsum. Donec at leo id tortor mattis tempus</p>
+                    </div>
+                </li>
+                <li class="tarjeta1" id="tarjeta">
+                    <img src="img (4).jpg" alt="">
+                    <div class="text">
+                        <h3>Fotografias de perros</h3>
+                        <a href="">June 20, 2020</a>
+                        <p>
+                            Curabitur quis faucibus odio, nec accumsan erat. Duis id ante convallis magna mattis pulvinar eu ut ipsum. Donec at leo id tortor mattis tempus</p>
+                    </div>
+                </li>
+                <li class="tarjeta1" id="tarjeta">
+                    <img src="img (3).jpg" alt="">
+                    <div class="text">
+                        <h3>Fotografias de perros</h3>
+                        <a href="">June 20, 2020</a>
+                        <p>Curabitur quis faucibus odio, nec accumsan erat. Duis id ante convallis magna mattis pulvinar eu ut ipsum. Donec at leo id tortor mattis tempus </p>
+                    </div>
+                </li>
+                <li class="tarjeta1" id="tarjeta">
+                    <img src="img (2).jpg" alt="">
+                    <div class="text">
+                        <h3>Fotografias de perros</h3>
+                        <a href="">June 20, 2020</a>
+                        <p>
+                            Curabitur quis faucibus odio, nec accumsan erat. Duis id ante convallis magna mattis pulvinar eu ut ipsum. Donec at leo id tortor mattis tempus</p>
+                    </div>
+                </li>
+            </div>
+        </div>
+
+        
+
+
+
+
+    <div class="footer">
+        <footer>
+            <div class="texto">
+                <a href=""><b>ADser</b></a>
+                <p>Estamos locos por mejorar su negocio, por lo que nos aseguramos de realizar un seguimiento de los resultados desde el primer día. Claro, se nos ocurren grandes ideas creativas que atraen y cautivan a sus clientes</p>
+            </div>
+            <div class="tabla">
+                <ul >
+                    <li><b>WORK WITH US</b></li>
+                    <hr>
+                    <li><a href="#">tarr</a></li>
+                    <li><a href="#">hdgdgg</a></li>
+                    <li><a href="#">jhdddh</a></li>
+                    <li><a href="#">jkdjdjkh</a></li>
+                    <li><a href="#">gggsdghs</a></li>
+                </ul >
+                <ul>
+                    <li><b>USEFUL LINK</b></li>
+                    <hr>
+                    <li><a href="">gsgdsgjsd</a></li>
+                    <li><a href="">hdhdhjds</a></li>
+                    <li><a href="">msd</a></li>
+                    <li><a href="">dsjkd</a></li>
+                    <li><a href="">dsh</a></li>
+                </ul>
+                <ul>
+                    <li><b>CONTACTOS</b></li>
+                    <hr>
+                    <li><a href="">hfdhjsdh</a></li>
+                    <li><a href="">dsnsd</a></li>
+                    <li><a href="">dshj</a></li>
+                    <li><a href="">hsdhjs</a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="pie">
+            <ul>
+                <li><i class="icon-facebook"></i></li>
+                <li><i class="icon-twitter"></i></li>
+                <li><i class="icon-globe"></i></li>
+                <li><i class="icon-info-with-circle"></i></li>
+                <li><i class="icon-instagram"></i></li>
+            </ul>
+            <div class="firma">
+                <span>2020.ADser Informatic</span>
+            </div>
+        </div>
+    </div>
+    <button id="boton" class="btn-floating"><i class="icon-arrow-up"></i></button>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+<!-- <script> $('.dropdown-toggle').dropdown();</script> -->
+
+<script src="js/odometer.js"></script>
+<script src="js/js.js"></script>
+<script src="dice.js"></script>
+<script>
+  // var aumenta1=document.querySelector('.aumenta1');
+  // const num1=new Odometer({
+  //   el:aumenta1,
+  // })
+  // aumenta1.innerHTML=5600;
+  // //num1.update(5600);
+
+  // var aumenta2=document.querySelector(".aumenta2");
+  // const num2=new Odometer({
+  //   el:aumenta2,
+
+  // })
+  // // aumenta1=5600;
+  // num2.update(5600);
+</script>
+</body>
+</html>

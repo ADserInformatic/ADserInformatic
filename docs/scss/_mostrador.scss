@@ -1,0 +1,121 @@
+.mostrador{
+    width: 100%;
+    margin-bottom: 0px;
+    position: relative;
+    display: block;
+    z-index: 999;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    .tarjetero{  //fot
+        margin: 0px auto ;
+        width: 90%;
+        display:flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 999;
+        overflow: hidden;
+
+    }
+}
+
+.caption-style-4{
+    transition:all 1s ease-in-out;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+
+}
+
+.caption-style-4 li{
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.caption-style-4 li:hover .caption{
+    opacity: 1;
+}
+
+.caption-style-4 li:hover img{
+    opacity: 1;
+    transform: scale(1.15,1.15);
+    -webkit-transform:scale(1.15,1.15);
+    -moz-transform:scale(1.15,1.15);
+    -ms-transform:scale(1.15,1.15);
+    -o-transform:scale(1.15,1.15);
+}
+
+
+.caption-style-4 img{
+    transition:all 1s ease-in-out;
+    width: 400px;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+}
+
+
+.caption-style-4 .caption{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition:all 0.45s ease-in-out;
+    -moz-transition:all 0.45s ease-in-out;
+    -o-transition:all 0.45s ease-in-out;
+    -ms-transition:all 0.45s ease-in-out;
+    transition:all 0.45s ease-in-out;
+}
+
+.caption-style-4 img{
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    -ms-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+}
+.caption-style-4 .blur{
+    background-color: rgba(0,0,0,0.65);
+    height: 300px;
+    width: 400px;
+    z-index: 5;
+    position: absolute;
+}
+
+.caption-style-4 .caption-text h1{
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.caption-style-4 .caption-text{
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    top:100px;
+}
+#taaag{  transition:all 1s ease-in-out;}
+@keyframes transformer {
+    from {
+        transform: scale(0.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.aparece{animation: transformer 0.5s ease-in-out 0s 1;}   //nombre del keyframe, tiempo de duracion entre "from" y "to", tipo de transicion, tiempo de delay entre q es cargado hasta que comienza la animacion, cantidad de veces que se repite
+
+.ocultar{display: none;}
+
+.escondercontransicion{
+    transition: all 0.1s ease-in-out;
+    transform: scale(0,0);
+    
+}
+
+
