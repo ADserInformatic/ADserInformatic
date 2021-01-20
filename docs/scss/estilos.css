@@ -119,6 +119,11 @@
   color: green;
 }
 
+.carousel-item {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
 .carousel-item img {
   opacity: 0.6;
 }
@@ -127,16 +132,26 @@
   position: absolute;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 209, 231, 0.5)), to(rgba(243, 17, 224, 0.5)));
   background-image: linear-gradient(rgba(25, 209, 231, 0.5), rgba(243, 17, 224, 0.5));
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
   height: 100%;
   width: 100%;
+  background-position: center;
+  background-repeat: non-repeat;
+  background-size: cover;
 }
 
 .gradiente2 {
   position: absolute;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
   height: 100%;
   width: 100%;
+  background-position: center;
+  background-repeat: non-repeat;
+  background-size: cover;
 }
 
 .mostrador {
