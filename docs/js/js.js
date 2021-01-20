@@ -1,5 +1,5 @@
 
-var menu=document.getElementById('menu');
+var menu=document.querySelector('.menu');
 //var scroll=window.pageYOffset;
 var botonflotante=document.getElementById('boton');
 window.addEventListener('scroll',()=>(revisar()));

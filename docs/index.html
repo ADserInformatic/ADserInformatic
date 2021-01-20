@@ -13,75 +13,26 @@
 
 </head>
 <body>
-    <div class="entero"> 
+    <div class="entero" data-spy="scroll" data-target="#scrollspy"> 
 
 
       <!-- BARRA NAVEGACION -->
-      <nav id="menu" class="navbar navbar-expand-lg fixed-top quieto">
-        <div class="container-fluid">
-          <a class="navbar-brand logo" href="#"><strong> ADser Informatic</strong></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="partebarra">
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <!-- HOME -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="MenuHOME" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <strong> Servicios</strong>
-                </a>
-                <div class="dropdown-menu menuhome" aria-labelledby="MenuHOME">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <!-- PAGES -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="MenuPAGES" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <strong> Portafolio</strong>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="MenuPAGES">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <!-- BLOG -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="MenuBLOG" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <strong> Contacto</strong>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="MenuBLOG">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <!-- PORTFOLIO -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="MenuPORTFOLIO" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <strong> Redes</strong>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="MenuPORTFOLIO">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="icono"><i class="icon-add-to-list"> </i></li>
-              <li class="icono"><i class="icon-add-to-list"> </i></li>
-
-            </ul>
-            <hr>
-          </div>
-        </div> 
-        </div>
-        
+      <nav id="navbar-example2" class="menu navbar navbar-light bg-light quieto fixed-top">
+        <a class="navbar-brand logo" href="#">ADser Informatic</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#Servicios"><strong>Servicios</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Planes"><strong>Planes </strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contacto"><strong>Contacto </strong></a>
+          </li>
+        </ul>
       </nav>
 
-
+      
 
 <!-- CAROUSEL -->
 
@@ -133,12 +84,6 @@
     </div>
    
 
-
-
-
-
-
-
 <!-- WHOWEARE -->
     <div class="whoweare">
       <div class="row" style="margin: 0 15px;">
@@ -161,7 +106,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-2"></div>
+        <div class="col-sm-2"><br><br></div>
 
         <div class="col-sm-3">
           <div class="containerrr">
@@ -169,8 +114,8 @@
               <img class="imggg" src="images/diego.jpg" title="Foto10" alt="Foto0">
               <div class="texttt">
                 Diego Kemer
-                <!-- <p>Me esfuerzo cada día para que cada trabajo sea mejor que el anterior. Mi fuerte es el front-end</p> -->
-                <!-- <p>Aprendiendo constantemente</p> -->
+                <!-- <p>Me esfuerzo cada día para que cada trabajo sea mejor que el anterior. Mi fuerte es el front-end</p>
+                <p>Aprendiendo constantemente</p> -->
               </div>
             </div>
           </div>
@@ -183,8 +128,10 @@
 
 
 
-<!-- presentacion -->
+<!-- Planes -->
+<div id="Planes"></div>
 <div class="fotos">
+
   <div class="tiitle">
       <h2>Páginas a tu medida</h2>
       <i class="icon-arrow-down" style="color: rgb(55, 146, 206); text-shadow: 2px 2px 10px #000; font-size: 25px;"></i>
@@ -240,6 +187,10 @@
           </div>
       </div>
   </div>
+    <div class="tiitle">
+       <h2>Cada sitio creado es adaptado a tus necesidades</h2>
+       <p>Cada plan esta pensado para lograr un crecimiento exponencial en cada negocio, aplicando analisis de mercado sobre el uso y aceptabilidad para lograr una mayor cantidad de visitas y permanencia en cada una de las páginas. </p>
+    </div>
 </div>
 
 
@@ -382,15 +333,17 @@
       <h4>LEYENDA</h4>
     </div>
   </div>
+  
 </div>
 
+<div id="Servicios"></div>
     
-
+<br><br>
 
         <!-- carrusel con flechitas -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="tiitle">
-                <h2>pasos para obtener tu sitio web</h2>
+                <h2>Pasos para obtener tu sitio web</h2>
                 <p>Fácil, rápido y con distintas opciones de pago.</p>
             </div>
             <div class="caru">
@@ -448,8 +401,10 @@
 
           <!-- tarjetas después del footer -->
             <div class="Titulotarjetas">
-                <h2>Variedad de ofertas</h2>
-                <p>Tenemos el sitio web que vos necesitás</p>
+                <h2>Algunos de nuestros trabajos</h2>
+                <p>Tenemos el sitio web que vos necesitas y si no lo tenemos te lo creamos a medida!!</p>
+                
+
             </div>
             <div class="cuerpe" id="lightSlider">
     
@@ -530,12 +485,14 @@
 
 
 
-
+ <div id="Contacto"></div>
     <div class="footer">
         <footer>
             <div class="texto">
                 <a href=""><b>ADser</b></a>
                 <p>Estamos locos por mejorar su negocio, por lo que nos aseguramos de realizar un seguimiento de los resultados desde el primer día. Claro, se nos ocurren grandes ideas creativas que atraen y cautivan a sus clientes</p>
+                <h2>Como trabajamos?</h2>
+                <p>Utilizamos metodología de trabajo Scrum, entregando prototipos funcionales con los cuales vas moldeando tu propio Sitio Web. Hacemos "palpables" tus ideas.</p>
             </div>
             <div class="tabla">
                 <ul >
