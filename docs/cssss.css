@@ -22,8 +22,8 @@ footer{
     margin: 0px;
     padding: 30px 20px;
 }
-ul a:hover{
-    color: blue;
+.tabla ul a:hover{
+    color: rgb(20, 238, 238);
 }
 .texto{
     width: 40%;
@@ -82,6 +82,10 @@ ul li a{
     display: inline-block;
     font-size: 20px;
     padding: 0px 10px;
+}
+.pie ul li a:hover{
+    color: rgb(20, 238, 238);
+    transform: scale(1.2);
 }
 .firma span{
     margin: 20px;

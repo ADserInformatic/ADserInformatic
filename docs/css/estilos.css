@@ -96,8 +96,14 @@
     background: #fff;
     box-sizing: border-box;
 }
+.d p{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .d h3{
-    margin: 20px auto;
+    margin: 10px auto;
+    text-shadow: rgba(219, 12, 140, 0.836);;
 }
 .cart .d img{
     width: 90px;
@@ -105,6 +111,30 @@
     border-radius: 50%;
     object-fit: cover;
     margin: 10px auto;
+}
+.d a img{
+    transition: all 1s;
+}
+.d a:hover img{
+    transition: ease-in-out 1s;
+    transform: scale(1.1);
+}
+.caru .d{
+    box-shadow: 2px 2px 3px #000;
+}
+@keyframes late{
+    0%{transform: scale(1);}
+    60%{transform: scale(1.3);}
+    90%{transform: scale(1.4);}
+    100%{opacity: 0;}
+}
+
+.d .icon-arrow-up{
+    color: rgba(219, 12, 140, 0.836);
+    animation: .5s flecha infinite;
+    font-size: 25px;
+    text-shadow: 2px 2px 10px #000;
+    display: block;
 }
 .flech{
     border: none;
@@ -274,6 +304,11 @@ ul li a{
     font-size: .8em;
     text-transform: capitalize;
 }
+.tabla ul li a:hover{
+    color: rgb(49, 186, 228);
+    transform: scale(1.1);
+    transition: .5s;
+}
 .pie{
     background: black;
     color: #fff;
@@ -290,6 +325,11 @@ ul li a{
     padding-left: 10px;
     padding-top: 60px;
     padding-bottom: 10px;
+}
+.pie ul li a:hover{
+    color: rgb(49, 186, 228);
+    transform: scale(1.3);
+    transition: .5s;
 }
 .firma span{
     padding-top: 60px;
