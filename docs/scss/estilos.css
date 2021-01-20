@@ -140,14 +140,21 @@
 }
 
 .mostrador {
-  width: 100%;
-  margin-bottom: 0px;
+  width: 90%;
+  margin: 0px auto;
   position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 999;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mostrador .tarjetero {
@@ -161,6 +168,11 @@
   position: relative;
   z-index: 999;
   overflow: hidden;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .caption-style-4 {
@@ -192,51 +204,12 @@
   -o-transform: scale(1.15, 1.15);
 }
 
-.caption-style-4 img {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  width: 400px;
-  height: 300px;
-  margin: 0px;
-  padding: 0px;
-  float: left;
-  z-index: 4;
-}
-
 .caption-style-4 .caption {
   cursor: pointer;
   position: absolute;
   opacity: 0;
   -webkit-transition: all 0.45s ease-in-out;
   transition: all 0.45s ease-in-out;
-}
-
-.caption-style-4 img {
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-.caption-style-4 .blur {
-  background-color: rgba(0, 0, 0, 0.65);
-  height: 300px;
-  width: 400px;
-  z-index: 5;
-  position: absolute;
-}
-
-.caption-style-4 .caption-text h1 {
-  text-transform: uppercase;
-  font-size: 24px;
-}
-
-.caption-style-4 .caption-text {
-  z-index: 10;
-  color: #fff;
-  position: absolute;
-  width: 400px;
-  height: 300px;
-  text-align: center;
-  top: 100px;
 }
 
 #taaag {
@@ -282,6 +255,84 @@
           transform: scale(0, 0);
 }
 
+.caption-style-4 img {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  width: 350px;
+  height: 265px;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  z-index: 4;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.caption-style-4 .blur {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 265px;
+  width: 350px;
+  z-index: 5;
+  position: absolute;
+}
+
+.caption-style-4 .caption-text h1 {
+  text-transform: uppercase;
+  font-size: 23px;
+}
+
+.caption-style-4 .caption-text {
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  width: 350px;
+  height: 265px;
+  text-align: center;
+  top: 100px;
+}
+
+@media (max-width: 992px) {
+  .caption-style-4 img {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    width: 300px;
+    height: 225px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+  }
+  .caption-style-4 .blur {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 225px;
+    width: 300px;
+    z-index: 5;
+    position: absolute;
+  }
+  .caption-style-4 .caption-text h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .caption-style-4 .caption-text {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 300px;
+    height: 225px;
+    text-align: center;
+    top: 100px;
+  }
+}
+
+@media (max-width: 743px) {
+  .mostrador {
+    display: none;
+  }
+  .panel {
+    display: none;
+  }
+}
+
 .numeros {
   color: white;
   float: none;
@@ -309,12 +360,10 @@
           flex-direction: column;
 }
 
-.numeros .contenedoraumenta .aumenta {
-  border-radius: 5px;
-  min-width: 200px;
-  text-align: center;
-  padding: 8px;
-  letter-spacing: 4px;
+@media (max-width: 580) {
+  .aumenta {
+    min-width: 100px;
+  }
 }
 
 .containerrr {
@@ -331,6 +380,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: 200px;
 }
 
 .div-imggg .imggg {
@@ -341,6 +391,11 @@
   -webkit-box-shadow: 3px 3px 10px black;
           box-shadow: 3px 3px 10px black;
   width: 100%;
+  height: 100%;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transform: 0px 0px 1;
   transform: 0px 0px 1;
   transform: translate(0px, 0px) scale(1);
@@ -359,6 +414,7 @@
 .div-imggg .texttt {
   font-family: 'Open Sans';
   position: relative;
+  font-size: 15px;
   z-index: -1;
   display: block;
   bottom: 20px;

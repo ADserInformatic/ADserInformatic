@@ -1,17 +1,20 @@
 
 var menu=document.getElementById('menu');
 //var scroll=window.pageYOffset;
-
+var botonflotante=document.getElementById('boton');
 window.addEventListener('scroll',()=>(revisar()));
 
 function revisar (){
 if (window.pageYOffset>60){
     menu.classList.add("moviendo");
     menu.classList.remove("quieto");
+    botonflotante.classList.remove("ocultar");
 
 }else{  menu.classList.add("quieto");
         menu.classList.remove("moviendo");
-
+        if (window.pageYOffset<60){
+            botonflotante.classList.add("ocultar");
+        }
     }
 }
 
@@ -19,22 +22,22 @@ if (window.pageYOffset>60){
 
 // ACTIVA Y DESACTIVA OPCIONES DE MOSTRADOR
 var all=document.querySelector('#all');
-var design=document.querySelector('#design');
-var web=document.querySelector('#web');
-var branding=document.querySelector('#branding');
-var printeee=document.querySelector('#print');
+var informativo=document.querySelector('#informativo');
+var basico=document.querySelector('#basico');
+var estandar=document.querySelector('#estandar');
+var premmium=document.querySelector('#premmium');
 all.addEventListener('click',()=>{esconder(all)});
-design.addEventListener('click',()=>(esconder(design)));
-web.addEventListener('click',()=>{esconder(web)});
-branding.addEventListener('click',()=>{esconder(branding)});
-printeee.addEventListener('click',()=>{esconder(printeee)});
+informativo.addEventListener('click',()=>(esconder(informativo)));
+basico.addEventListener('click',()=>{esconder(basico)});
+estandar.addEventListener('click',()=>{esconder(estandar)});
+premmium.addEventListener('click',()=>{esconder(premmium)});
 var taaag=document.querySelectorAll('#taaag');
 function desactive (){
     all.classList.remove('active');
-    design.classList.remove('active');
-    web.classList.remove('active');
-    branding.classList.remove('active');
-    printeee.classList.remove('active');
+    informativo.classList.remove('active');
+    basico.classList.remove('active');
+    estandar.classList.remove('active');
+    premmium.classList.remove('active');
 };
 
 // CLASES PARA EFECTOS DE TARJETAS DE MOSTRADOR
@@ -72,25 +75,25 @@ function agranda(){for(let i=0;i<taaag.length;i++){
 function esconder(e){
     desactive();e.classList.add('active');
     switch(e.innerHTML){
-        case "ALL": desocultar(); break;
-        case "DESIGN": 
+        case "All": desocultar(); break;
+        case "Informativo": 
                 desocultar();
                 setTimeout('destransicion()',500);
                 transicion([0,1,2]);
                 setTimeout('ocultar([0,1,2])',500);
                 break;
-        case "WEB": 
+        case "Básico": 
                     desocultar();
                     setTimeout('destransicion()',500);
                     transicion([0,2,3,4]);
                     setTimeout('ocultar([0,2,3,4])',500);break;
-        case "BRANDING": 
+        case "Estándar": 
                          desocultar();
                          setTimeout('destransicion()',500);
                          transicion([3,4,5]);
                          setTimeout('ocultar([3,4,5])',500);break;
   
-        case "PRINT":
+        case "Premmium":
                     desocultar();
                     setTimeout('destransicion()',500);
                     transicion([1,2,3,4,5]);
