@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+}
+.cuerpe{
+    width: 100%;
+    height: 600px;
+    z-index: 999;
+    display: flex;
+    position: relative;
+}
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 0;
+    clear: both;
+    box-sizing: border-box;
+}
+footer{
+    display: flex;
+    background: rgb(37, 34, 34);
+    margin: 0px;
+    padding: 30px 20px;
+}
+ul a:hover{
+    color: blue;
+}
+.texto{
+    width: 40%;
+    color: #fff;
+    margin: 0px 40px;
+    font-size: 20px;
+    padding: 0px 50px 20px 50px;
+    box-sizing: border-box;
+}
+.texto a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    margin: 0px 0px 20px 0px;
+    display: block;
+    box-sizing: border-box;
+}
+.tabla{
+    display: flex;
+    color: #fff;
+    width: 60%;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+    color: #fff;
+    margin: 30px 10px;
+    box-sizing: border-box;
+}
+hr{
+    width: 30%;
+    height: .2px;
+    background-color: rgb(21, 21, 216);
+    margin: 20px 0px;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0px;
+    font-size: .8em;
+    text-transform: capitalize;
+}
+.pie{
+    background: black;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    clear: both;
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+.pie ul li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+.firma span{
+    margin: 20px;
+    font-size: 20px;
+    display: inline-block;
+} 
