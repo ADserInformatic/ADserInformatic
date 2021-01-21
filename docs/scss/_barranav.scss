@@ -7,6 +7,7 @@
   .logo{
     transition:all 0.5s ease-in-out;
     color: white;
+    font-size: 2.1em;  
     margin-left: 3em;}
   .nav-link{
     transition:all 0.5s ease-in-out;
@@ -30,12 +31,15 @@
             height: 55px;
             font-size: .9em;
             .logo{
+              transition:all 0.5s ease-in-out;
               color: black;
               margin-left: 3em;
-              font-size: 2.1em;  
+              font-size: 1.5em;  
+              transform: translate(0px, 0px);
                          
               }
           .nav-link{
+            transition:all 0.5s ease-in-out;
             color: black;
             font-size: 1em;
             margin-right: 1em;

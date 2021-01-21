@@ -14,15 +14,20 @@
   background-color: transparent !important;
   height: 80px;
   font-size: .9em;
+  position: fixed;
 }
 
 .quieto .logo {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   color: white;
-  margin-left: 3em;
   font-size: 2.1em;
+  margin-left: 3em;
 }
 
 .quieto .nav-link {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   color: white;
   font-size: 1em;
   margin-right: 1em;
@@ -54,41 +59,25 @@
 }
 
 .moviendo .logo {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   color: black;
   margin-left: 3em;
-  font-size: 2.1em;
+  font-size: 1.5em;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
 }
 
 .moviendo .nav-link {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   color: black;
   font-size: 1em;
   margin-right: 1em;
 }
 
 .moviendo .nav-link:hover {
-  color: black;
-}
-
-.moviendo .divisorvertical {
-  color: black;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.moviendo .partebarra {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  margin-right: 5em;
-}
-
-.menuhome {
-  background-color: grey;
-  width: 600px;
-}
-
-.icono {
-  margin: auto 10px;
+  color: #292929;
 }
 
 .whoweare {
@@ -398,7 +387,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
+  height: 100%;
 }
 
 .div-imggg .imggg {
