@@ -257,18 +257,16 @@ footer{
     display: flex;
     background: rgb(37, 34, 34);
     margin: 0px;
-    padding: 30px 0px;
+    padding: 30px 10%;
     box-sizing: border-box;
+    justify-content: space-between;
 }
-ul a:hover{
-    color: rgb(55, 146, 206)
-}
+
 .texto{
     width: 40%;
     color: #fff;
     margin: 0px 40px;
     /* font-size: 20px; */
-    padding: 0px 50px 20px 50px;
     box-sizing: border-box;
 }
 .texto a{
@@ -278,6 +276,9 @@ ul a:hover{
     margin: 0px 0px 20px 0px;
     display: block;
     box-sizing: border-box;
+}
+.texto p, .tabla p{
+    width: 80%;
 }
 .tabla{
     display: flex;
@@ -392,8 +393,7 @@ button i{
     .footer footer .texto{width: 90%; padding-right: 5px; margin: 0px;};
     .texto a{margin-bottom: 5px;}
     .footer footer .tabla{width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;};
-    .tabla ul{width: 100%; display: flex; flex-wrap: wrap;}
-    .tabla ul li{display: inline-block; padding: 0px 5px;}
+    .texto p, .tabla p{width: 100%;}
     .pie{display: block; padding: 0px;}
     .pie ul{display: flex; width: 90%; margin: 5px auto; justify-content: space-around;}
     .pie ul li{padding-top: 5px; font-size: 1em;}
