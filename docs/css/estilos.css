@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .entero{
-    background: rgb(219, 218, 218);
+    background: rgb(216, 213, 213);
     position: relative;
     overflow: hidden;
     z-index: 999;
@@ -83,7 +83,7 @@
 }
 .cart{
     width: 100%;
-    background: rgb(219, 218, 218);
+    background: rgb(216, 213, 213);
     display: flex;
     align-content: center;
     justify-content: center;
@@ -257,15 +257,18 @@ footer{
     display: flex;
     background: rgb(37, 34, 34);
     margin: 0px;
-    padding: 30px 1em;
+    padding: 30px 0px;
     box-sizing: border-box;
-    justify-content: space-between;
+}
+ul a:hover{
+    color: rgb(55, 146, 206)
 }
 .texto{
     width: 40%;
     color: #fff;
     margin: 0px 40px;
     /* font-size: 20px; */
+    padding: 0px 50px 20px 50px;
     box-sizing: border-box;
 }
 .texto a{
@@ -276,9 +279,6 @@ footer{
     display: block;
     box-sizing: border-box;
 }
-.texto p, .tabla p{
-    width: 80%;
-}
 .tabla{
     display: flex;
     color: #fff;
@@ -286,6 +286,12 @@ footer{
     margin-top: 20px;
     /* justify-content: space-around; */
     flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.tabla ul{
+    list-style: none;
+    color: #fff;
     box-sizing: border-box;
 }
 hr{
@@ -397,8 +403,4 @@ button i{
     .tarjeta1{width: 40%; height: auto; box-sizing: border-box};
     .cart{width: 100%; padding-left: 20px; padding-right: 20px;}
     .d{ width: 90%;}
-    .d p{width: 100%; text-justify: distribute};
-    .d h3{font-size: .8em;}
-    .d {padding: 10px 5px 0px 5px; height: 370px;};
-    .caru{height: auto;}
 }
