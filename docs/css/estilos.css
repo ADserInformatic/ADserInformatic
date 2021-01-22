@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .entero{
-    background: rgb(216, 213, 213);
+    background: rgb(247, 232, 232);
     position: relative;
     overflow: hidden;
     z-index: 999;
@@ -403,4 +403,8 @@ button i{
     .tarjeta1{width: 40%; height: auto; box-sizing: border-box};
     .cart{width: 100%; padding-left: 20px; padding-right: 20px;}
     .d{ width: 90%;}
+    .d p{width: 100%; text-justify: distribute};
+    .d h3{font-size: .8em;}
+    .d {padding: 10px 5px 0px 5px; height: 370px;};
+    .caru{height: auto;}
 }
