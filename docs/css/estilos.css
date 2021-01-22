@@ -390,7 +390,7 @@ button i{
 @media(max-width: 600px){
     .fotos .img{width: 80%;}
     .footer footer{padding-bottom: 10px; padding-top: 5px;}
-    .footer footer .texto{width: 90%; padding-right: 5px; margin: 0px;};
+    .footer footer .texto{width: 100%; padding-right: 5px; margin: 0px;};
     .texto a{margin-bottom: 5px;}
     .footer footer .tabla{width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;};
     .texto p, .tabla p{width: 100%;}
