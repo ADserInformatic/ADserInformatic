@@ -80,6 +80,13 @@
   color: #292929;
 }
 
+.moviendo .partebarra {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 5em;
+}
+
 @media (max-width: 680px) {
   .partebarra {
     display: none;
