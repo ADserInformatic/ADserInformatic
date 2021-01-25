@@ -1,2 +1,5 @@
 .parrafo{color: #888; margin: 15px 20%;}
 .titulo{margin: 15px 0; color: #888;}
+@media (max-width: 600px){
+    .parrafo{margin: 10px 0px; text-align: center;}
+}

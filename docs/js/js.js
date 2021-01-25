@@ -75,29 +75,33 @@ function agranda(){for(let i=0;i<taaag.length;i++){
 function esconder(e){
     desactive();e.classList.add('active');
     switch(e.innerHTML){
-        case "All": desocultar(); break;
+        case "All": desocultar(); 
+                    setTimeout('destransicion()',500);
+                    transicion([4,5,6,7]);
+                    setTimeout('ocultar([4,5,6,7])',500);
+                    break;
         case "Informativo": 
                 desocultar();
                 setTimeout('destransicion()',500);
-                transicion([0,1,2]);
-                setTimeout('ocultar([0,1,2])',500);
+                transicion([4,5,6,7]);
+                setTimeout('ocultar([4,5,6,7])',500);
                 break;
         case "Básico": 
                     desocultar();
                     setTimeout('destransicion()',500);
-                    transicion([0,2,3,4]);
-                    setTimeout('ocultar([0,2,3,4])',500);break;
+                    transicion([4,6,7]);
+                    setTimeout('ocultar([4,6,7])',500);break;
         case "Estándar": 
                          desocultar();
                          setTimeout('destransicion()',500);
-                         transicion([3,4,5]);
-                         setTimeout('ocultar([3,4,5])',500);break;
+                         transicion([4,7]);
+                         setTimeout('ocultar([4,7])',500);break;
   
         case "Premmium":
                     desocultar();
                     setTimeout('destransicion()',500);
-                    transicion([1,2,3,4,5]);
-                    setTimeout('ocultar([1,2,3,4,5])',500);break;
+                    transicion([4,6]);
+                    setTimeout('ocultar([4,6])',500);break;
 
     }
 }

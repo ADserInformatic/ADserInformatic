@@ -8,6 +8,13 @@
   color: #888;
 }
 
+@media (max-width: 600px) {
+  .parrafo {
+    margin: 10px 0px;
+    text-align: center;
+  }
+}
+
 .quieto {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -98,7 +105,7 @@
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
-  background-color: #d8d5d5;
+  background-color: #dbdada;
   text-align: center;
 }
 
