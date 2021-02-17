@@ -485,4 +485,13 @@
   -o-transform: translate(0px, 0px) scale(2);
   -ms-transform: translate(0px, 0px) scale(2);
 }
+
+.titttulo {
+  font-size: 6rem;
+  margin-top: -40%;
+}
+
+.texxxto {
+  font-size: 3rem;
+}
 /*# sourceMappingURL=estilos.css.map */
