@@ -114,29 +114,29 @@ var numerosfinales=[5600,220,108,650];
 var aumenta1=document.querySelector('.aumenta1');
 var aumenta2=document.querySelector('.aumenta2');
 var aumenta3=document.querySelector('.aumenta3');
-var aumenta4=document.querySelector('.aumenta4');
+// var aumenta4=document.querySelector('.aumenta4');
 
 const num1=new Odometer({
     el:aumenta1,
     duration: 4000
 })
-aumenta1.innerHTML=5600;
+aumenta1.innerHTML=12000;
 // num1.update(5600);
 
 const num2=new Odometer({
     el:aumenta2,
     // animation:'count',
     duration: 3000})
-num2.update(220);
+num2.update(16000);
 
 const num3=new Odometer({
     el:aumenta3,
     // animation:'count',
     duration: 3000})
-    num3.update(108);
+    num3.update(24000);
 
-const num4=new Odometer({
-    el:aumenta4,
-    // animation:'count',
-    duration: 3000})
-num4.update(650);
+// const num4=new Odometer({
+//     el:aumenta4,
+//     // animation:'count',
+//     duration: 3000})
+// num4.update(650);
