@@ -140,3 +140,14 @@ const num4=new Odometer({
     // animation:'count',
     duration: 3000})
 num4.update(650);
+
+
+
+// DIEGO
+const boton = document.getElementById('boton');
+
+boton.addEventListener('click', ()=>{
+    document.documentElement.scrollTop = 0;
+})
+
+let tarjeta = document.querySelectorAll('#tarjeta');

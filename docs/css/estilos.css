@@ -35,7 +35,7 @@
     overflow: hidden;
 }
 .fotos .img{
-    width: 20%;
+    width: 23%;
     height: 350px;
     margin: 20px auto;
     overflow: hidden;
@@ -58,9 +58,9 @@
     text-shadow: 3px 3px 5px #000;
 }
 .img img{
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
-    height: 400px;
+    height: 350px;
     position: relative;
     transition: all .5s;
 
@@ -76,7 +76,6 @@
 .img:hover img{
     transform: scale(1.2,1.2);
     z-index: 9;
-    filter: contrast(2);
 }
 
 
