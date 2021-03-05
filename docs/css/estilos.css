@@ -40,8 +40,24 @@
     margin: 20px auto;
     overflow: hidden;
     position: relative;
-    transition: all .5s;
+    transition: all 1s;
     filter: saturate(2);
+}
+.derecha{
+    animation: derecha 2.5s;
+}
+.izquierda{
+    animation: izquierda 2.5s;
+}
+@keyframes derecha {
+    0%{transform: translateX(-150px); opacity: 0;}
+    90%{transform: translateX(10px);}
+    100%{transform: translateX(0px); opacity: 1;}
+}
+@keyframes izquierda {
+    0%{transform: translateX(150px); opacity: 0;}
+    90%{transform: translateX(-10px);}
+    100%{transform: translateX(0px); opacity: 1;}
 }
 .fot .img:hover .trans{
     width: 100%;
@@ -406,14 +422,16 @@ button i{
 }
 @media(max-width: 800px){
     .pie ul li a{animation: none;}
+    .fotos .img{opacity: 1;}
     .fot .img .trans{
         width: 100%;
+        opacity: 0;
         top: 0px;
         height: 100%;
         position: absolute;
         background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(23, 162, 255, 0.705));
         z-index: 999;
-        transition: all 1s;
+        transition: 2s all 1s;
         text-align: center;
         padding-top: 50px;
         color: #fff;

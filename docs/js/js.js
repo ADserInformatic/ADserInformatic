@@ -151,3 +151,41 @@ boton.addEventListener('click', ()=>{
 })
 
 let tarjeta = document.querySelectorAll('#tarjeta');
+
+
+//viuport
+
+const trans = document.querySelectorAll('.trans');
+const imag = document.querySelectorAll('.img')
+
+function intersection (yo, observer){
+    yo.forEach(entry =>{
+        if(entry.isIntersecting){
+            if(entry.target.classList.contains('img')){
+                trans[0].style.opacity = 1;
+                trans[1].style.opacity = 1;
+                trans[2].style.opacity = 1;
+                trans[3].style.opacity = 1;
+                imag[0].classList.add('derecha')
+                imag[1].classList.add('derecha')
+                imag[2].classList.add('izquierda')
+                imag[3].classList.add('izquierda')
+            }
+        }
+    })
+};
+const opti = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0
+}
+
+
+const observer = new IntersectionObserver(intersection, opti);
+
+imag.forEach(img =>{
+    observer.observe(img)
+})
+// trans.forEach(t =>{
+//     observer.observe(t)
+// })
